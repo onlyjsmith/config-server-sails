@@ -18,6 +18,7 @@ module.exports = {
 
 
   fn: async function (inputs, exits) {
+    sails.log.verbose('this')
     const all = await InstanceConfig.find() 
     // Filter for public visibility
     const slugs = all.map(i => i.slug)
