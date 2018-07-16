@@ -33,7 +33,7 @@ module.exports = function unauthorised(optionalData) {
   var res = this.res;
 
   // Define the status code to send in the response.
-  var statusCodeToSet = 401;
+  var statusCodeToSet = 418;
 
   // If no data was provided, use res.sendStatus().
   if (optionalData === undefined) {

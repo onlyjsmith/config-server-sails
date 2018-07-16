@@ -7,8 +7,6 @@
 
 module.exports = {
 
-  schema: true,
-
   attributes: {
 
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
@@ -17,6 +15,10 @@ module.exports = {
     
     name: {
       type: 'string',
+      required: true,
+    },
+    version: {
+      type: 'number',
       required: true,
     },
 
